@@ -1,0 +1,44 @@
+@use '../util' as *;
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+  margin-bottom: rem(10);
+  overflow-wrap: break-word;
+}
+
+h1 {
+  font-weight: 600;
+}
+
+h2 {
+  padding-top: rem(60);
+  font-size: rem(22);
+  font-weight: 700;
+  color: var(--vdkgrayblue);
+}
+
+a,
+a:visited,
+a:hover {
+  cursor: pointer;
+}
+
+p {
+  padding-top: rem(10);
+  font-weight: 500;
+  font-size: rem(15);
+  opacity: 50%;
+  //color: var(--grayblue);
+  overflow-wrap: break-word;
+  margin-bottom: rem(30);
+
+  
+  @media (max-width: 34em) {
+    
+  }
+  
+  @media (max-width: 64em) {
+  }
+}

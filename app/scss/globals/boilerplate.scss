@@ -1,0 +1,48 @@
+@use '../util/' as *;
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+  line-height: 1.5;
+}
+
+*,
+*::before,
+*::after {
+  //box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  margin: rem(100) rem(30) rem(100) rem(30);
+  font-family: 'Manrope', sans-serif;
+  background: var(--ltgrayblue);
+  height: 100vh;
+  padding: rem(20) rem(10) 0 rem(10);
+
+  .attribution {
+    font-size: rem(20);
+    margin-top: rem(60);
+    text-align: center; 
+    margin-bottom: rem(40);
+
+    a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    @media (max-width: 23.125em) {
+      width: 90%;
+      font-size: 90%;
+    }
+  }
+
+  @media (max-width: 23.125em) {
+    padding: 0;
+    margin: rem(15) rem(16);
+    width: 90%;
+    font-size: 90%;
+  }
+}
